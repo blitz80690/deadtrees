@@ -1,5 +1,20 @@
-adapter: postgres
-host: localhost
-user: user
-password: password
-database: deadtrees_development
+development:
+  adapter: postgres
+  host: localhost
+  user: user
+  password: password
+  database: deadtrees_development
+
+test:
+  adapter: postgres
+  host: localhost
+  user: user
+  password: password
+  database: deadtrees_test
+
+production:
+  adapter: postgres
+  host: localhost
+  user: user
+  password: password
+  database: deadtrees
