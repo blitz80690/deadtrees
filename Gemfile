@@ -18,4 +18,6 @@ end
 group :development do
   gem 'shotgun'
   gem 'sass'
+  gem 'foreman'
+  gem 'rake'
 end
