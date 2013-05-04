@@ -11,8 +11,9 @@ gem 'pg'
 # templating
 gem 'slim'
 
-# deployment
-gem 'unicorn'
+group :deployment do
+  gem 'unicorn'
+end
 
 group :development do
   gem 'shotgun'
