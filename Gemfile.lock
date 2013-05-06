@@ -38,6 +38,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   foreman
   pg
   rake
