@@ -2,6 +2,7 @@ source 'http://www.rubygems.org'
 
 # framework
 gem 'sinatra'
+gem 'dotenv'
 
 # database
 gem 'sequel'
