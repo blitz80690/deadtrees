@@ -21,7 +21,7 @@
 
         cd /vagrant
         bundle
-		rbenv rehash
+        rbenv rehash
 
 6. Create a PostgreSQL database and a role.
 
