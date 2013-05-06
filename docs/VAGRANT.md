@@ -32,7 +32,7 @@
 
 7. Start the application.
 
-        shotgun -o 0.0.0.0
+        foreman start
 
 8. Open a web browser and navigate to [http://localhost:8080/ping](http://localhost:8080/ping).
    If all is well, you will see the word "pong".
