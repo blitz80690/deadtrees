@@ -25,7 +25,7 @@
 
 6. Create a PostgreSQL database and a role.
 
-		sudo su - postgres
+        sudo su - postgres
         createuser --createdb --superuser vagrant
         createdb --owner vagrant deadtrees_development
         exit
