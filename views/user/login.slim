@@ -1,0 +1,9 @@
+div.container
+  form.login method="post" action="/login"
+    h2 Please Authenticate
+    - unless flash.empty?
+      - flash.keys.each do |k|
+        div class="alert alert-#{k}" = flash[k]
+    input type="text" name="username" class="input-block-level" placeholder="Username"
+    input type="password" name="password" class="input-block-level" placeholder="Password"
+    input type="submit" value="Login" class="btn btn-primary"
