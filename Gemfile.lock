@@ -18,7 +18,7 @@ GEM
     rack-protection (1.5.0)
       rack
     raindrops (0.11.0)
-    rake (0.9.6)
+    rake (10.0.4)
     sass (3.2.8)
     sequel (3.47.0)
     sequel_pg (1.6.5)
