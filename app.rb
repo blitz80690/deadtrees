@@ -1,4 +1,12 @@
+$LOAD_PATH.unshift File.expand_path(File.dirname(__FILE__))
+
 require 'sinatra/base'
+require 'sequel'
+require 'yaml'
+require 'slim'
+
+config = YAML.load_file('config/database.yml')['development']
+DB = Sequel.connect(config)
 
 class App < Sinatra::Base
   configure do
