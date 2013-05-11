@@ -30,11 +30,15 @@
         createdb --owner vagrant deadtrees_development
         exit
 
-7. Start the application.
+7. Generate a session key.
+
+        openssl rand -out session.key 64
+
+8. Start the application.
 
         foreman start
 
-8. Open a web browser and navigate to [http://localhost:8080/ping](http://localhost:8080/ping).
+9. Open a web browser and navigate to [http://localhost:8080/ping](http://localhost:8080/ping).
    If all is well, you will see the word "pong".
 
 **Note:** Shotgun will reload the application when you modify the source files.
