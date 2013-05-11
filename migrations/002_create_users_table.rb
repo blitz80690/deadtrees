@@ -1,6 +1,6 @@
 Sequel.migration do
   up do
-    create_table(:user) do
+    create_table :user do
       primary_key :id
       String :name
       String :username, :null => false, :unique => true
@@ -12,6 +12,6 @@ Sequel.migration do
     end
   end
   down do
-    drop_table(:user)
+    drop_table :user
   end
 end

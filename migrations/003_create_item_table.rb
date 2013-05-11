@@ -1,6 +1,6 @@
 Sequel.migration do
   up do
-    create_table(:item) do
+    create_table :item do
       primary_key :id
       String :title
       String :author
@@ -18,6 +18,6 @@ Sequel.migration do
     end
   end
   down do
-    drop_table(:item)
+    drop_table :item
   end
 end
