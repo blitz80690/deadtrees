@@ -52,6 +52,13 @@ class App < Sinatra::Base
     user.username = params[:username]
     user.email = params[:email]
     user.password = params[:password]
+    user.password_confirmation = params[:password_confirmation]
+
+    unless user.valid?
+      @errors = user.errors
+      return slim :'user/register', :layout => true
+    end
+
     user.save
 
     flash[:success] = "You have been successfully registered."
