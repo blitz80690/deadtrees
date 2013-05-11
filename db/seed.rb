@@ -1,0 +1,7 @@
+Tag.create(:text => "book")
+Tag.create(:text => "comic book")
+Tag.create(:text => "non-fiction")
+Tag.create(:text => "fiction")
+Tag.create(:text => "science fiction")
+Tag.create(:text => "fantasy")
+Tag.create(:text => "programming")

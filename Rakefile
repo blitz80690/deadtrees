@@ -1,3 +1,5 @@
+$LOAD_PATH.unshift File.expand_path(File.dirname(__FILE__))
+
 require "rake"
 require "yaml"
 require "sequel"
@@ -34,5 +36,14 @@ namespace :migrate do
   task :down do
     Sequel::Migrator.run DB, "migrations", :target => 0
     puts "<= migrate:down executed"
+  end
+end
+
+namespace :db do
+  desc "Load the database with seed data."
+  task :seed do
+    Dir['app/models/*.rb'].each { |f| require f }
+    seed_file = 'db/seed.rb'
+    load(seed_file) if File.exists?(seed_file)
   end
 end
