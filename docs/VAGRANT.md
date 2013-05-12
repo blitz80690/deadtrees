@@ -34,6 +34,7 @@
 
         cp config/database.yml.dist config/database.yml
 
+
         development:
           adapter: postgres
           database: deadtrees_development
