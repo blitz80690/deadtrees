@@ -30,24 +30,25 @@
         createdb --owner vagrant deadtrees_development
         exit
 
-7. Create a database configuration.
+7. Copy the default database configuration.
 
         cp config/database.yml.dist config/database.yml
 
+8. Edit the database configuration.
 
         development:
           adapter: postgres
           database: deadtrees_development
 
-8. Generate a session key.
+9. Generate a session key.
 
         openssl rand -out session.key 64
 
-9. Start the application.
+10. Start the application.
 
         foreman start
 
-10. Open a web browser and navigate to [http://localhost:8080/ping](http://localhost:8080/ping).
+11. Open a web browser and navigate to [http://localhost:8080/ping](http://localhost:8080/ping).
     If all is well, you will see the word "pong".
 
 **Note:** Shotgun will reload the application when you modify the source files.
