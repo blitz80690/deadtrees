@@ -19,3 +19,4 @@ class App < Sinatra::Base
 end
 
 require_relative 'app/controllers/user_controller.rb'
+require_relative 'app/controllers/isbn.rb'
